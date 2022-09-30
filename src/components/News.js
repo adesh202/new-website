@@ -25,7 +25,7 @@ export class News extends Component {
     };
   }
 
-  async componentDidMount() {
+  /*   async componentDidMount() {
     let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=c7658ddd945446e1b96fe0589dc0e65c&page=1&pageSize=${this.props.pageSize}`;
     this.setState({ loading: true });
     let data = await fetch(url);
@@ -36,7 +36,7 @@ export class News extends Component {
       totalResults: parsedData.totalResults,
       loading: false,
     });
-  }
+  } */
 
   handlePrevClick = async () => {
     console.log("Previous");
@@ -88,7 +88,7 @@ export class News extends Component {
     return (
       <div className="container my-3">
         <h1 className="text-center" style={{ margin: "35px 0px" }}>
-          NewsMonkey - Top Headlines
+          Indian Affairs - Top Headlines
         </h1>
         {this.state.loading && <Spinner />}
         <div className="row">
